@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Number Guessing Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Secret Number Guessing Game</h1>
+    </header>
+
+    <main>
+        <div id="game-intro">
+          <h2 id="guess-result">I'm thinking of a number between 1-100</h2>
+          <h3 id="higher-or-lower">Can you guess what it is?</h3>
+        </div>
+        
+        <div id="game-interface">
+          
+        <div id="guess-interface">
+        <input type="number" pattern="[0-9]*" id="user-guess" name="user-guess" min="1" max="100" placeholder="Enter Your Guess">
+        <button type="button" name="submit-guess" id="submit-guess" >Guess</button>
+        </div>
+        
+        <p id="guess-validation-tooltip"></p>
+        
+        <ol id="guess-history">
+          <li class="guess">○</li>
+          <li class="guess">○</li>
+          <li class="guess">○</li>
+          <li class="guess">○</li>
+          <li class="guess">○</li>
+        </ol>
+          
+        <p id="guess-count-tooltip">You get 5 guesses. Use them wisely!</p>
+        
+        <div id="helper-buttons">
+        <button type="button" name="reset-game" id="reset-game" >Reset Game</button>
+        <button type="button" name="get hint" id="get-hint" >Show Hint</button>
+        </div>
+          
+        <p id="hint-text"></p>
+        <div>
+          
+    </main>
+
+</body>
+
+</html>
